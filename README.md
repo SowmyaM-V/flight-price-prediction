@@ -1,43 +1,64 @@
-# ✈️ Flight Price Prediction System
 
-## 📌 Project Overview
-This project is a **Machine Learning-based Flight Price Prediction System** that predicts the price of flight tickets based on various input features such as airline, source, destination, duration, and number of stops.
+# ✈️ Flight Fare Prediction System using Machine Learning with Flask Deployment
 
-The model is trained using historical flight data and deployed using a simple web interface.
-
----
+This project predicts flight ticket prices based on user inputs such as airline, source, destination, and travel details. The trained machine learning model is deployed as a web application using Flask to provide real-time predictions.
 
 ## 🚀 Features
-- Predict flight ticket prices instantly
-- User-friendly web interface
-- Machine Learning model trained using real-world dataset
-- Data preprocessing and feature engineering included
-- Model saved using pickle for reuse
-
----
+- Flight ticket price prediction using machine learning  
+- Real-time prediction through web interface  
+- Feature engineering (date, time, duration, stops)  
+- User-friendly UI with HTML and CSS  
+- End-to-end ML pipeline (data → model → deployment)  
+- Handles multiple airlines, sources, and destinations  
 
 ## 🛠️ Technologies Used
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Flask (for web app)
-- HTML & CSS (Frontend)
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Flask  
+- HTML, CSS  
 
----
+## ⚙️ Getting Started
 
-## 📂 Project Structure
+### 🔹 Prerequisites
+- Python 3.x  
+- pip  
 
----
+### 🔹 Installation
 
-## ⚙️ How to Run the Project
+Install required libraries:
+```bash
+pip install pandas numpy scikit-learn flask
 
-### 1️⃣ Clone the Repository
-├── app.py # Flask backend application
-├── home.html # Frontend UI
-├── style.css # Styling
-├── flight_rf.pkl # Trained ML model
-├── data_train.xlsx # Training dataset
-├── test_set.xlsx # Testing dataset
-├── prediction.ipynb # Model training notebook
+Run the application:
+```bash
+python app.py
 
+📁 Project Structure
+flight-fare-prediction/
+├── app.py                  # Flask backend application
+├── home.html              # Frontend UI
+├── style.css              # Styling
+├── flight_rf.pkl          # Trained ML model
+├── data_train.xlsx        # Training dataset
+├── test_set.xlsx          # Testing dataset
+├── prediction.ipynb       # Model training notebook
+└── README.md
+
+💡 Usage
+Enter flight details (source, destination, airline, date, time, stops)
+Click submit
+Get predicted flight price instantly
+
+
+📊 Workflow
+Data preprocessing and feature engineering
+Model training using Random Forest
+Model saved using Pickle
+Flask app for deployment
+User input → Prediction → Output display
+
+💾 Data Storage
+Model stored as .pkl file
+Dataset stored locally
